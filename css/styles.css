@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .monlogo{
+    width: 5%;
+}
+nav .onglets{
+    /* padding: 2; */
+}
+.header{
+    background-color: slategrey;
+    padding-bottom: 30px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: seagreen;
+    justify-content: space-around;
+}
+.content{
+    background-color: blue;
+    width: 60%;
+    padding: 20px;
+}
+.content div{
+    background-color: seashell;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    justify-content: space-around;
+    width: auto;
+    border-radius: 5%;
+}
+.content img{
+    height: 150px;
+    width: 280px;
+    border-radius: 5% 5% 0% 0%;
+}
+.content2{
+    background-color: red;
+    display: block;
+    justify-content: end;
+    width: 30%;
+    height: 10%;
+    padding: 20px;
+}
+.content2 div{
+    background-color: rgb(207, 148, 255);
+    margin: 5px;
+    padding: 5px;
+    display: block;
+    justify-content: space-around;
+    width: auto;
+    border-radius: 5%;
+}
+.content2 img{
+    height: 150px;
+    width: 120px;
+    border-radius: 5% 0% 0% 5%;
+}
+.second{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(139, 130, 46);
+    justify-content: space-around;
+}
+.footer{
+    background-color: skyblue;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+}

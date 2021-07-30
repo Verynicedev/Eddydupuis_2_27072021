@@ -1,41 +1,63 @@
 body{
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
+
+/* ----> LOGO + NAVBAR <---- */
+
 nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
+    height: 100%;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color: blue;
+    border-top-style: solid 20px blue;
 }
 nav .monlogo{
     width: 5%;
 }
-nav .onglets{
-    /* padding: 2; */
-}
+
+/* ----> HEADER <---- */
+
 .header{
     background-color: slategrey;
     padding-bottom: 30px;
 }
+
+/* ----> CONTAINER H+P <---- */
+
 .main{
     display: flex;
     flex-wrap: wrap;
     background-color: seagreen;
     justify-content: space-around;
 }
+
+/* ----> HEBERGEMENT <---- */
+
 .content{
     background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 60%;
+    height: 50%;
     padding: 20px;
+}
+.content h2{
+    width: 100%;
 }
 .content div{
     background-color: seashell;
     padding: 5px;
     margin: 5px;
-    display: inline-block;
-    justify-content: space-around;
-    width: auto;
     border-radius: 5%;
 }
 .content img{
@@ -43,39 +65,87 @@ nav .onglets{
     width: 280px;
     border-radius: 5% 5% 0% 0%;
 }
+
+/* ----> POPULAIRE <---- */
+
 .content2{
     background-color: red;
-    display: block;
-    justify-content: end;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     width: 30%;
-    height: 10%;
-    padding: 20px;
+    height: 50%;
+    align-content: center;
 }
 .content2 div{
-    background-color: rgb(207, 148, 255);
+    background-color: seashell;
+    display: flex;
     margin: 5px;
     padding: 5px;
-    display: block;
-    justify-content: space-around;
-    width: auto;
     border-radius: 5%;
+    width: 75%;
+}
+.content2 h3,p{
+    width: 100%;
+    height: 50%;
 }
 .content2 img{
     height: 150px;
     width: 120px;
     border-radius: 5% 0% 0% 5%;
 }
+
+/* ----> ACTIVITE <---- */
+
 .second{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(139, 130, 46);
+    padding: 40px;
+}
+.content3{
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
     justify-content: space-around;
 }
+.content3 h2{
+    width: 100%;
+}
+.acti1, .acti2{
+    width: 47%;
+    background-color: grey;
+    margin: 5px;
+    display: flex;
+}
+.acti1 div, .acti2 div{
+    background-color: seashell;
+    width: 45%;
+    margin: 5px;
+}
+.large1{
+    height: 45%;
+}
+.content3 .xlarge{
+    height: 300px;
+    width: 220px;
+    border-radius: 5% 5% 0% 0%;
+}
+.content3 .large{
+    height: 100px;
+    width: 200px;
+    border-radius: 5% 5% 0% 0%;
+}
+
+/* ----> FOOTER <---- */
+
 .footer{
     background-color: skyblue;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* align-items: flex-start; */
+    align-content: flex-start;
 }

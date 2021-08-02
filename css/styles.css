@@ -30,6 +30,29 @@ nav .monlogo{
     background-color: slategrey;
     padding-bottom: 30px;
 }
+.searchbar{
+    display: flex;
+}
+.styled{
+    background-color: #F2F2F2;
+    padding: 10px 10px;
+    border-radius: 10px 0 0 10px;
+}
+.styled0{
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+.styled1{
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 0 10px 10px 0;
+}
 
 /* ----> CONTAINER H+P <---- */
 

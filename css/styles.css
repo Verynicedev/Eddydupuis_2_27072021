@@ -58,12 +58,12 @@ nav .monlogo{
     background-color: seashell;
     padding: 5px;
     margin: 5px;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 .content img{
     height: 150px;
     width: 280px;
-    border-radius: 5% 5% 0% 0%;
+    border-radius: 10px 10px 0 0;
 }
 
 /* ----> POPULAIRE <---- */

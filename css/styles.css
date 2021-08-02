@@ -53,6 +53,15 @@ nav .monlogo{
     font-size: 16px;
     border-radius: 0 10px 10px 0;
 }
+.filtre{
+    margin-top: 10px;
+}
+.contentfiltre{
+    display: flex;
+}
+.filtre1{
+    margin: 10px 0 0 10px;
+}
 
 /* ----> CONTAINER H+P <---- */
 

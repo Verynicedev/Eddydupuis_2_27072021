@@ -33,17 +33,17 @@ nav .monlogo{
 .searchbar{
     display: flex;
 }
-.styled{
+.search{
     background-color: #F2F2F2;
     padding: 10px 10px;
     border-radius: 10px 0 0 10px;
 }
-.styled0{
+.search0{
     border: none;
     text-align: center;
     font-size: 16px;
 }
-.styled1{
+.search1{
     background-color: #0065FC;
     border: none;
     color: white;

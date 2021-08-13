@@ -33,29 +33,35 @@ body{
 }
 .child1 {
     position: absolute;
-    top: 0px;
+    top: -30px;
     right: 240px;
+    padding-top: 30px;
 }
 .child2 {
     position: absolute;
-    top: 0px;
+    top: -30px;
     right: 120px;
+    padding-top: 30px;
 }
 .monlogo{
-    width: 6%;
+    width: 10%;
 }
 #navbar a{
     font-weight: bold;
     text-decoration: none;
 }
 #navbar .a1{
- color: #0065FC;
+ color: #1b1b1b;
 }
 #navbar .a2{
  color: #1b1b1b;
 }
 #navbar .a3{
  color: #0065FC;
+}
+#navbar .a1:hover,#navbar .a2:hover{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 /* ----> HEADER <---- */
@@ -95,8 +101,13 @@ body{
     font-size: 16px;
     border-radius: 0 10px 10px 0;
 }
+.fa-search{
+    display: none;
+}
 .filtre{
     margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 .contentfiltre{
     display: flex;
@@ -104,6 +115,7 @@ body{
     padding-top: 15px;
     width: 100%;
     height: 35px;
+    align-items: center;
 }
 .filtre0{
     margin-right: 10px;
@@ -120,26 +132,30 @@ body{
 }
 .filtre1{
     margin-right: 10px;
+    margin-top: 5px;
     border: 2px solid #E2E2E2;
-    border-radius: 15px;
-    /* padding: 3px; */
+    border-radius: 5em;
     display: flex;
+    height: 35px;
+}
+.styledfiltre:hover{
+    color: #0065FC;
 }
 .filtre2{
     background-color: #DEEBFF;
-    border-radius: 50%;
-    width: 31px;
-    height: 31px;
+    border-radius: 5em;
+    width: 35px;
+    height: 100%;
+
 }
 .fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog{
-    /* padding-right: 5px;
-    padding-left: 5px; */
-    border-radius: 100%;
+ /* padding-left: 10px;
+    padding-top: 10px; */
     width: 100%;
     height: 100%;
-    /* background-color: #DEEBFF; */
     color: #0065FC;
 }
+
 .styledfiltre{
     background-color: white;
     border: none;
@@ -243,6 +259,11 @@ body{
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    justify-content: center;
+}
+#second .container h2{
+    width: 100%;
+    padding-left: 13px;
 }
 #second .container .imgxlarge{
     width: 100%;
@@ -259,11 +280,11 @@ body{
 }
 #second .container .content1,#second .container .content2{
     margin: 14px;
-    width: 23%;
+    width: 22%;
     border-radius: 10px;
 }
 #second .content1{
-    box-shadow: 1px 1px 1px 1px rgba(117, 117, 117, 0.671);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
     border-radius: 10px;
 }
 
@@ -272,7 +293,7 @@ body{
 }
 #second .content2 .subcontent{
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgba(117, 117, 117, 0.671);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
 }
 #second .content2 .subcontent p{
     padding-left: 10px;
@@ -300,9 +321,9 @@ body{
     padding-bottom: 10px;
 }
 
-/* ----> MEDIA QUERRY <---- */
+/* ----> MEDIA QUERRY 1200px <---- */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
     #main .container{
         width: 100%;
         flex-basis: 100%;
@@ -310,27 +331,261 @@ body{
         margin-top: 20px;
         margin-right: 0;
 
-}
+    }
     .maincontent1{
         width: 100%;
-        flex-basis: 100%;
-}
+        /* flex-basis: 45%; */
+    }
     #main .container2{
         width: 100%;
         flex-basis: 100%;
         margin-right: 0;
-
-}
+    }
     .maincontent2{
         max-width: 100%;
         max-height: 100%;
-        flex-basis: 100%;
+        flex-basis: 28%;
         text-align: left;
         display: block;
-}
+    }
     .maincontent2 img{
         width: 100%;
         height: 150px;
         border-radius: 10px 10px 0 0;
+    }
+}
+
+/* ----> MEDIA QUERRY 950px 800px <---- */
+@media only screen and (max-width: 949px) and (min-width: 800px){
+    #second .container{
+    padding: 20px;
+    }
+    #second .container .imgxlarge,#second .container .imglarge{
+        /* height: 150px; */
+        width: 100%;
+    }
+    #second .container .content1,#second .container .content2{
+        width: 45%;
+    }
+}
+/* ----> MEDIA QUERRY 800px <---- */
+
+@media only screen and (max-width: 799px) and (min-width: 600px){
+    .maincontent1{
+        width: 100%;
+        flex-basis: 40%;
+    }
+
+    .maincontent2{
+        padding: 5px;
+        margin: 7px 40px 7px;
+        display: flex;
+        border-radius: 20px;
+        flex-basis: 100%;
+    }
+    .maincontent2 img{
+        width: 150px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 20px 0 0 20px;
+    }
+    #second .container{
+    padding: 20px;
+    }
+    #second .container .imgxlarge,#second .container .imglarge{
+        /* height: 150px; */
+        width: 100%;
+    }
+    #second .container .content1,#second .container .content2{
+        width: 45%;
+    }
+}
+/* ----> MEDIA QUERRY 599px et moins <---- */
+@media only screen and (max-width: 599px) {
+
+/* ----> LOGO + NAV <---- */
+
+    #navbar{
+        display: flex;
+        margin: 10px;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+    #navbar .contentnav{
+        margin: 3px;
+        padding: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        width: 100%;
+    }
+    .parent {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .child1 {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        font-size: 1.4em;
+        width: 50%;
+        text-align: center;
+        margin: 0;
+    }
+    .child2 {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        font-size: 1.4em;
+        width: 50%;
+        text-align: center;
+        margin: 0;
+    }
+    #navbar .child1,#navbar .child2{
+        border-bottom: 2px solid #00000013;
+    }
+    #navbar .a1:hover,#navbar .a2:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+    .monlogo{
+        width: 140px;
+        height: 60px;
+        padding: 10px;
+    }
+    #navbar a{
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #navbar .a1{
+    color: #1b1b1b;
+    }
+    #navbar .a2{
+    color: #1b1b1b;
+    }
+    #navbar .a3{
+    color: #0065FC;
+    font-size: 1.7em;
+    text-align: center;
+    /* width: 70%; */
+    display:block;
+    width:200px;
+    padding-top: 25px;
+    /* margin:0 auto; */
+    }
+
+/* ----> HEADER <---- */
+    #header h2{
+        padding-top: 30px;
+    }
+    .filtre{
+        margin-bottom: 70px;
+    }
+    .filtre0{
+        width: 100%;
+    }
+    .search1{
+    display: none;
+    }
+    .fa-search{
+        display: block;
+        background-color: #0065FC;
+        border: none;
+        color: white;
+        padding: 10px 13px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 0 10px 10px 0;
+        width: 3%;
+    }
+ 
+/* ----> PREMIERE SECTION <---- */
+
+    #main{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    #main .container2{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 20px 0;
+
+    }
+    .maincontent2{
+        padding: 5px;
+        margin: 7px 40px 7px;
+        display: flex;
+        border-radius: 20px;
+        flex-basis: 100%;
+    }
+    #main .container2 h2{
+        width: 70%;
+        padding-left: 25px;
+       }
+    .fa-chart-line{
+        padding-top: 25px;
+        padding-right: 40px;
+    }
+    .maincontent2 img{
+        width: 150px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 20px 0 0 20px;
+    }
+        #main .container{
+        width: 100%;
+        /* flex-basis: 100%; */
+        /* margin-right: 0; */
+        border-radius: 0;
+        margin: 7px 0;
+        padding: 0;
+        background-color: white;
+
+    }
+        .maincontent1{
+        padding: 5px;
+        margin: 7px 40px 7px;
+        width: 100%;
+        flex-basis: 100%;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
+
+    }
+        .maincontent1 img{
+        border-radius: 20px 20px 0 0;
+    }
+        .maincontent1 h3,.maincontent1 p,.maincontent1 .star{
+            padding-left: 10px;
+    }
+        .maincontent1 i{
+            padding-bottom: 10px;
+    }
+
+/* ----> SECOND SECTION <---- */
+
+    #second .container{
+    padding: 20px;
+    }
+    #second .container .imgxlarge,#second .container .imglarge{
+        height: 150px;
+        width: 100%;
+    }
+    #second .container .content1,#second .container .content2{
+        width: 100%;
+    }
+
+/* ----> FOOTER <---- */
+        #footer{
+        margin: 0;
+    }
+        #footer .content{
+        flex-basis: 100%;
     }
 }

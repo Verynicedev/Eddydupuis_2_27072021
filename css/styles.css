@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    color: black;
 }
 
 #container{
@@ -82,6 +83,8 @@ body{
     display: flex;
 }
 .fa-map-marker-alt{
+    display: flex;
+    align-items: center;
     background-color: #F2F2F2;
     padding: 10px 15px 10px 15px;
     border-radius: 10px 0 0 10px;
@@ -91,7 +94,7 @@ body{
     text-align: center;
     font-size: 16px;
 }
-.search1{
+/* .search1{
     background-color: #0065FC;
     border: none;
     color: white;
@@ -100,15 +103,31 @@ body{
     text-decoration: none;
     font-size: 16px;
     border-radius: 0 10px 10px 0;
+} */
+
+.button-1 {
+background-color: #0065fc;
+color: #FFF;
+height: 50px;
+width: 134px;
+border-radius: 0 12px 12px 0;
+border: 0;
+padding: 0 20px 0 20px;
+font-size: 0;
 }
-.fa-search{
-    display: none;
+
+.button-1::after {
+    content: "Rechercher"; 
+    font-size: 16px; 
+    color: #FFF; 
 }
+
+
 .filtre{
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
+
 .contentfiltre{
     display: flex;
     flex-wrap: wrap;
@@ -117,6 +136,7 @@ body{
     height: 35px;
     align-items: center;
 }
+
 .filtre0{
     margin-right: 10px;
     border-radius: 15px;
@@ -124,12 +144,14 @@ body{
     font-weight: bold;
     color: black;
 }
+
 ::placeholder{
     color: #242424;
     text-align: start;
     padding-left: 10px;
     font-weight: bold;
 }
+
 .filtre1{
     margin-right: 10px;
     margin-top: 5px;
@@ -138,22 +160,31 @@ body{
     display: flex;
     height: 35px;
 }
+
 .styledfiltre:hover{
     color: #0065FC;
 }
+
 .filtre2{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     background-color: #DEEBFF;
-    border-radius: 5em;
+    border-radius: 50%;
     width: 35px;
     height: 100%;
 
 }
+
 .fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog{
  /* padding-left: 10px;
     padding-top: 10px; */
     width: 100%;
     height: 100%;
     color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .styledfiltre{
@@ -196,7 +227,7 @@ body{
     padding-left: 32px;
 }
 .maincontent1{
-    padding: 10px;
+    padding: 5px;
     margin: 7px;
     flex-basis: 28%;
     text-align: left;
@@ -230,7 +261,7 @@ body{
     width: 5%;
 }
 .maincontent2{
-    padding: 10px;
+    padding: 5px;
     margin: 7px;
     display: flex;
     border-radius: 10px;
@@ -488,9 +519,24 @@ body{
     .filtre0{
         width: 100%;
     }
-    .search1{
-    display: none;
+    /* .search1{
+    content: '<i class="fas fa-search"></i>';
+    } */
+
+    .button-1 {
+        display: flex;
+        width: 50px; 
+        border-radius: 0 12px 12px 0; 
+        padding: 0;
+        align-items: center;
     }
+
+    .button-1::after {
+        content: "Rechercher"; 
+        font-size: 0;
+    }
+
+
     .fa-search{
         display: block;
         background-color: #0065FC;

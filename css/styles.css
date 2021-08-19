@@ -9,8 +9,8 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 }
-/* ----> LOGO + NAV <---- */
 
+/* ----> Logo + Nav <---- */
 #navbar {
     display: flex;
     margin: 10px;
@@ -75,8 +75,7 @@ body {
     color: #0065FC;
 }
 
-/* ----> HEADER <---- */
-
+/* ----> Header <---- */
 #header {
     display: flex;
     margin: 10px;
@@ -91,6 +90,7 @@ body {
     width: 100%;   
 }
 
+/* Barre de recherche */
 .searchbar {
     display: flex;
 }
@@ -105,7 +105,6 @@ body {
 
 .search0 {
     border: 2px solid #F2F2F2;
-    /* text-align: center; */
     font-size: 16px;
     padding-left: 15px;
 }
@@ -127,6 +126,7 @@ body {
     color: #FFF; 
 }
 
+/* Les filtres Economique, Familial etc */
 .filtre {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -214,16 +214,16 @@ body {
     font-size: 12px;
 }
 
-/* ----> PREMIERE SECTION <---- */
-
+/* ----> Premiere section <---- */
 /* ----> Partie gauche et droite <---- */
-#main{
+#main {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
     justify-content: space-between;
 }
-#main .container,#main .container2{
+
+#main .container,#main .container2 {
     background-color: #E2E2E2;
     padding: 17px;
     display: flex;
@@ -231,22 +231,25 @@ body {
     margin: 3px;
     border-radius: 10px;
 }
-.maincontent1,.maincontent2,.item3{
+
+.maincontent1,.maincontent2,.item3 {
     background-color: white;
 }
 
 /* Partie gauche uniquement*/
-#main .container{
+#main .container {
     width: 64%;
     justify-content: center;
     margin-right: 3%;
 
 }
-#main .container h2, #main .container h3:last-child{
+
+#main .container h2, #main .container h3:last-child {
     width: 100%;
     padding-left: 32px;
 }
-.maincontent1{
+
+.maincontent1 {
     padding: 5px;
     margin: 7px;
     flex-basis: 28%;
@@ -256,36 +259,41 @@ body {
     max-width: 100%;
 }
 
-.maincontent1 p,.maincontent1 h2,.maincontent1 h3{
+.maincontent1 p,.maincontent1 h2,.maincontent1 h3 {
     margin: 6px 0;
 }
 
-.maincontent1 img{
+.maincontent1 img {
     width: 100%;
     height: 120px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
-.star0{
+
+.star0 {
     color: #0065FC;
 }
-.star1{
+
+.star1 {
     color: #E2E2E2;
 }
 
  /* Partie droite uniquement*/
-#main .container2{
+#main .container2 {
     justify-content: center;
     align-content: center;
     width: 26%;
 }
-#main .container2 h2{
+
+#main .container2 h2 {
     width: 90%;
 }
-#main .container2 .fa-chart-line{
+
+#main .container2 .fa-chart-line {
     width: 5%;
 }
-.maincontent2{
+
+.maincontent2 {
     padding: 5px;
     margin: 7px;
     display: flex;
@@ -301,21 +309,22 @@ body {
     margin-bottom: 50px;
 }
 
-.maincontent2 img{
+.maincontent2 img {
     width: 140px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
-.maincontent2 h3,.maincontent2 p{
+
+.maincontent2 h3,.maincontent2 p {
     max-width: 100%;
 }
-.maincontent2 div{
+
+.maincontent2 div {
     padding-left: 10px;
 }
 
-/* ----> SECOND SECTION <---- */
-
+/* ----> Seconde section <---- */
 #second {
     display: flex;
 }
@@ -332,54 +341,53 @@ body {
     grid-template-rows: auto auto auto auto;
     justify-content: center;
     align-items: flex-start;
-    /* background-color: grey; */
 }
 
 #activites {
     grid-column: span 4;
 }
 
-#second .container-grille .imgxlarge{
+#second .container-grille .imgxlarge {
     width: 100%;
     height: 500px;
     object-fit: cover;
     border-radius: 10px 10px 0 0 ;
 }
 
-#second .container-grille .imglarge1{
+#second .container-grille .imglarge1 {
     width: 100%;
     height: 230px;
     object-fit: cover;
     border-radius: 10px 10px 0 0 ;
 }
 
-#second .container-grille .imglarge2{
+#second .container-grille .imglarge2 {
     width: 100%;
     height: 206px;
     object-fit: cover;
     border-radius: 10px 10px 0 0 ;
 }
 
-#second .content1, #second .content2{
+#second .content1, #second .content2 {
     margin-left: 3%;
     margin-right: 3%;
 }
 
-#second .content1 p, #second .content2 p{
+#second .content1 p, #second .content2 p {
     padding-left: 5px;
 }
 
-#second .content1 a, #second .content2 a{
+#second .content1 a, #second .content2 a {
     width: 100%;
 }
 
-#second .content1{
+#second .content1 {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
     border-radius: 10px;
     height: 100%;
 }
 
-#second .content2 .subcontent{
+#second .content2 .subcontent {
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
 }
@@ -397,26 +405,27 @@ body {
     flex-wrap: wrap;
 }
 
-#second .imgl1{
+#second .imgl1 {
     margin-bottom: 5px;
 }
 
-#second .imgl2{
+#second .imgl2 {
     margin-top: 5px;
 }
 
-/* ----> FOOTER <---- */
-
-#footer{
+/* ----> Footer <---- */
+#footer {
     display: flex;
     margin: 10px;
     background-color: #F2F2F2;
     margin: 50px 0 0 0;
 }
+
 #footer p, #footer h2 {
     margin: 5px;
 }
-#footer .container{
+
+#footer .container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -424,80 +433,92 @@ body {
     margin: 3px;
     padding: 17px;
 }
-#footer .content{
+
+#footer .content {
     flex-basis: 30%;
 }
-#footer .content h2,#footer .content p{
+
+#footer .content h2,#footer .content p {
     padding-bottom: 10px;
 }
 
-/* ----> MEDIA QUERRY 1200px <---- */
-
+/* ----> Media Querry (1200px / 801px) <---- */
 @media screen and (max-width: 1200px){
-    #main .container{
+/* ----> Premiere section <---- */
+/* Partie gauche */
+    #main .container {
         width: 100%;
         flex-basis: 100%;
         margin-bottom: 3px;
         margin-top: 20px;
         margin-right: 0;
+    }
 
-    }
-    .maincontent1{
+    .maincontent1 {
         width: 100%;
-        /* flex-basis: 45%; */
     }
-    #main .container2{
+
+/* Partie droite */
+    #main .container2 {
         width: 100%;
         flex-basis: 100%;
         margin-right: 0;
     }
-    .maincontent2{
+
+    .maincontent2 {
         max-width: 100%;
         max-height: 100%;
         flex-basis: 28%;
         text-align: left;
         display: block;
     }
-    .maincontent2 img{
+
+    .maincontent2 img {
         width: 100%;
         height: 150px;
         border-radius: 10px 10px 0 0;
     }
 }
 
-/* ----> MEDIA QUERRY 800px <---- */
-
+/* ----> Media Querry (800px / 600px) <---- */
 @media only screen and (max-width: 799px) and (min-width: 600px){
-    .maincontent1{
+/* ----> Première section <---- */
+/* Partie haute */
+    .maincontent1 {
         width: 100%;
         flex-basis: 40%;
     }
 
-    .maincontent2{
+/* Partie basse */
+    .maincontent2 {
         padding: 5px;
         margin: 7px 40px 7px;
         display: flex;
         border-radius: 20px;
         flex-basis: 100%;
     }
-    .maincontent2 img{
+
+    .maincontent2 img {
         width: 150px;
         height: 160px;
         object-fit: cover;
         border-radius: 20px 0 0 20px;
     }
 
-    #second .container{
+/* ----> Seconde section <---- */
+    #second .container {
         padding: 20px;
     }
-    #second .container .imgxlarge,#second .container .imglarge{
-        /* height: 150px; */
+
+    #second .container .imgxlarge,#second .container .imglarge {
         width: 100%;
     }
-    #second .container .content1,#second .container .content2{
+
+    #second .container .content1,#second .container .content2 {
         width: 45%;
     }
-        #second .container-grille {
+
+    #second .container-grille {
         min-height: 100%;
         width: 100%;
         display: grid;
@@ -505,60 +526,57 @@ body {
         grid-template-rows: auto auto;
         justify-content: center;
         align-items: flex-start;
-        /* background-color: grey; */
     }
 
     #activites {
-    grid-column: span 2;
+        grid-column: span 2;
     }
 
-    #second .container-grille .imgxlarge{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0 ;
+    #second .container-grille .imgxlarge {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0 ;
     }
 
-    #second .container-grille .imglarge1{
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0 ;
+    #second .container-grille .imglarge1 {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0 ;
     }
 
-    #second .container-grille .imglarge2{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0 ;
+    #second .container-grille .imglarge2 {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0 ;
     }
 }
-/* ----> MEDIA QUERRY 599px et moins <---- */
+/* ----> Media Querry (599px et moins) <---- */
 @media only screen and (max-width: 599px) {
-
-/* ----> LOGO + NAV <---- */
-
-    #navbar{
+/* ----> Logo + Nav <---- */
+    #navbar {
         display: flex;
         margin: 10px;
         flex-wrap: wrap;
-        /* justify-content: space-between; */
     }
-    #navbar .contentnav{
+
+    #navbar .contentnav {
         margin: 3px;
         padding: 17px;
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-between; */
         width: 100%;
     }
+
     .parent {
         position: relative;
         width: 100%;
         height: 100%;
         display: flex;
-        /* justify-content: space-between; */
     }
+
     .child1 {
         position: absolute;
         top: 100px;
@@ -568,6 +586,7 @@ body {
         text-align: center;
         margin: 0;
     }
+
     .child2 {
         position: absolute;
         top: 100px;
@@ -577,53 +596,57 @@ body {
         text-align: center;
         margin: 0;
     }
-    #navbar .child1,#navbar .child2{
+
+    #navbar .child1,#navbar .child2 {
         border-bottom: 2px solid #00000013;
     }
-    #navbar .a1:hover,#navbar .a2:hover{
+
+    #navbar .a1:hover,#navbar .a2:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
     }
-    .monlogo{
+
+    .monlogo {
         width: 140px;
         height: 60px;
         padding: 10px;
     }
-    #navbar a{
+
+    #navbar a {
         font-weight: bold;
         text-decoration: none;
     }
-    #navbar .a1{
-    color: #1b1b1b;
-    }
-    #navbar .a2{
-    color: #1b1b1b;
-    }
-    #navbar .a3{
-    color: #0065FC;
-    font-size: 1.7em;
-    text-align: center;
-    /* width: 70%; */
-    display:block;
-    width:200px;
-    padding-top: 25px;
-    /* margin:0 auto; */
+
+    #navbar .a1 {
+        color: #1b1b1b;
     }
 
-/* ----> HEADER <---- */
-    #header h2{
+    #navbar .a2 {
+        color: #1b1b1b;
+    }
+
+    #navbar .a3 {
+        color: #0065FC;
+        font-size: 1.7em;
+        text-align: center;
+        display:block;
+        width:200px;
+        padding-top: 25px;
+    }
+
+/* ----> Header <---- */
+    #header h2 {
         padding-top: 30px;
     }
-    .filtre{
+
+    .filtre {
         margin-bottom: 70px;
     }
-    .filtre0{
+
+    .filtre0 {
         width: 100%;
     }
-    /* .search1{
-    content: '<i class="fas fa-search"></i>';
-    } */
 
     .button-1 {
         display: flex;
@@ -638,8 +661,7 @@ body {
         font-size: 0;
     }
 
-
-    .fa-search{
+    .fa-search {
         display: block;
         background-color: #0065FC;
         border: none;
@@ -652,72 +674,78 @@ body {
         width: 3%;
     }
  
-/* ----> PREMIERE SECTION <---- */
-
-    #main{
+/* ----> Premiere section <---- */
+    #main {
         display: flex;
         flex-direction: column-reverse;
         margin: 0;
     }
-    #main .container2{
+
+/* Partie haute */
+    #main .container2 {
         width: 100%;
         border-radius: 0;
         margin: 0;
         padding: 20px 0;
 
     }
-    .maincontent2{
+
+    .maincontent2 {
         padding: 5px;
         margin: 7px 40px 7px;
         display: flex;
         border-radius: 20px;
         flex-basis: 100%;
     }
-    #main .container2 h2{
+
+    #main .container2 h2 {
         width: 70%;
         padding-left: 25px;
-       }
-    .fa-chart-line{
+    }
+
+    .fa-chart-line {
         padding-top: 25px;
         padding-right: 40px;
     }
-    .maincontent2 img{
+
+    .maincontent2 img {
         width: 150px;
         height: 160px;
         object-fit: cover;
         border-radius: 20px 0 0 20px;
     }
-        #main .container{
+
+/* Partie basse */
+    #main .container {
         width: 100%;
-        /* flex-basis: 100%; */
-        /* margin-right: 0; */
         border-radius: 0;
         margin: 7px 0;
         padding: 0;
         background-color: white;
 
     }
-        .maincontent1{
+    .maincontent1 {
         padding: 5px;
         margin: 7px 40px 7px;
         width: 100%;
         flex-basis: 100%;
         border-radius: 20px;
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
-
     }
-        .maincontent1 img{
+
+    .maincontent1 img {
         border-radius: 20px 20px 0 0;
     }
-        .maincontent1 h3,.maincontent1 p,.maincontent1 .star{
-            padding-left: 10px;
-    }
-        .maincontent1 i{
-            padding-bottom: 10px;
+
+    .maincontent1 h3,.maincontent1 p,.maincontent1 .star {
+        padding-left: 10px;
     }
 
-/* ----> SECOND SECTION <---- */
+    .maincontent1 i {
+        padding-bottom: 10px;
+    }
 
+/* ----> Seconde section <---- */
     #second {
         width: 100%;
     }
@@ -727,32 +755,29 @@ body {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        /* grid-template-columns: 100%;
-        grid-template-rows: auto; */
         justify-content: center;
         align-items: flex-start;
-        /* background-color: grey; */
     }
 
     #activites {
         width: 100%;
     }
 
-    #second .container-grille .imgxlarge{
+    #second .container-grille .imgxlarge {
         width: 100%;
         height: 200px;
         object-fit: cover;
         border-radius: 10px 10px 0 0 ;
     }
 
-    #second .container-grille .imglarge1{
+    #second .container-grille .imglarge1 {
         width: 100%;
         height: 200px;
         object-fit: cover;
         border-radius: 10px 10px 0 0 ;
     }
 
-    #second .container-grille .imglarge2{
+    #second .container-grille .imglarge2 {
         width: 100%;
         height: 200px;
         object-fit: cover;
@@ -764,21 +789,18 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        /* margin: 5; */
     } 
 
-    #second .content1{
+    #second .content1 {
         margin-top: 10px;
         margin-bottom: 10px;
     } 
 
     #second .subcontent {
         width: 100%;
-        /* margin: 0; */
     }
 
-/* ----> footer <---- */
-
+/* ----> Footer <---- */
     #footer .content{
         flex-basis: 100%;
     }

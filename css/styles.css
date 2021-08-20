@@ -176,13 +176,13 @@ body {
     height: 100%;
 }
 
-.fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog {
-    width: 100%;
-    height: 100%;
-    color: #0065FC;
+.iconcentre {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #0065FC;
 }
 
 .styledfiltre {
@@ -481,6 +481,10 @@ body {
         width: 100%;
         height: 150px;
         border-radius: 10px 10px 0 0;
+    }
+/* ----> Seconde section <---- */
+    #second .content1, #second .content2 {
+        height: 98%;
     }
 }
 

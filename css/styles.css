@@ -10,47 +10,49 @@ body {
     margin: 0 auto;
 }
 
-/* ----> Logo + Nav <---- */
-#navbar {
+/* ----> Les conteneurs de la page <---- */
+#navbar, #header, #main{
     display: flex;
     margin: 10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+/* ----> Logo + Nav <---- */
+#navbar {
+    margin: 0;
 }
 
 #navbar .contentnav {
-    margin: 3px;
-    padding: 17px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
 }
 
 .parent {
     position: relative;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .child1 {
     position: absolute;
-    top: -30px;
+    top: 0px;
     right: 240px;
     padding-top: 30px;
+    height: 30%;
 }
 
 .child2 {
     position: absolute;
-    top: -30px;
+    top: 0px;
     right: 120px;
     padding-top: 30px;
+    height: 30%;
+
 }
 
 .monlogo {
-    width: 10%;
+    width: 140px;
+    height: 65px;
+    justify-content: start;
+    padding-top: 10px;
 }
 
 #navbar a {
@@ -59,15 +61,17 @@ body {
 }
 
 #navbar .a1 {
- color: #1b1b1b;
+    color: #1b1b1b;
 }
 
 #navbar .a2 {
- color: #1b1b1b;
+    color: #1b1b1b;
 }
 
 #navbar .a3 {
- color: #0065FC;
+    color: #0065FC;
+    padding-top: 30px;
+
 }
 
 #navbar .a1:hover,#navbar .a2:hover {
@@ -76,18 +80,16 @@ body {
 }
 
 /* ----> Header <---- */
-#header {
-    display: flex;
-    margin: 10px;
-}
-
 .containerheader {
-    margin: 3px;
-    padding: 17px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;   
+}
+
+.headertitle {
+    padding: 2% 0 2%;
+    font-size: 12px;
 }
 
 /* Barre de recherche */
@@ -109,14 +111,17 @@ body {
     padding-left: 15px;
 }
 
+::placeholder {
+    color: #242424;
+    font-weight: bold;
+}
+
 .button-1 {
     background-color: #0065fc;
-    color: #FFF;
-    height: 50px;
+    height: 40px;
     width: 110px;
     border-radius: 0 12px 12px 0;
     border: 0;
-    padding: 0 10px 0 10px;
     font-size: 0;
 }
 
@@ -128,41 +133,34 @@ body {
 
 /* Les filtres Economique, Familial etc */
 .filtre {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .contentfiltre {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 15px;
-    width: 100%;
-    height: 35px;
     align-items: center;
 }
 
 .filtre0 {
     margin-right: 10px;
-    border-radius: 15px;
-    padding: 3px;
-    font-weight: bold;
-    color: black;
-}
-
-::placeholder {
-    color: #242424;
-    text-align: start;
-    padding-left: 10px;
     font-weight: bold;
 }
 
 .filtre1 {
     margin-right: 10px;
-    margin-top: 5px;
     border: 2px solid #E2E2E2;
     border-radius: 5em;
     display: flex;
     height: 35px;
+}
+
+.styledfiltre {
+    background-color: white;
+    border: none;
+    border-radius: 5em;
+    font-weight: bold;
 }
 
 .styledfiltre:hover {
@@ -171,81 +169,81 @@ body {
 
 .filtre2 {
     background-color: #DEEBFF;
-    border-radius: 50%;
+    border-radius: 5em;
     width: 35px;
-    height: 100%;
 }
 
 .iconcentre {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100%;
     color: #0065FC;
-}
-
-.styledfiltre {
-    background-color: white;
-    border: none;
-    border-radius: 15px;
-    font-weight: bold;
 }
 
 #info {
     display: flex;
     align-items: center;
-    padding-top: 30px;
 }
 
 .info {
-    width: 1%;
-    color: #0065FC;
-    border: 2px solid #E2E2E2;
-    border-radius: 50%;
-    padding: 3px;
-    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 1%;
+    color: #0065FC;
+    border: 2px solid #E2E2E2;
+    border-radius: 5em;
+    padding: 3px;
+    margin-right: 10px;
 }
 
-.fa-info {
-    font-size: 12px;
+.info {
+    font-size: 14px;
 }
 
 /* ----> Premiere section <---- */
 /* ----> Partie gauche et droite <---- */
 #main {
-    display: flex;
     flex-wrap: wrap;
-    margin: 10px;
     justify-content: space-between;
 }
 
-#main .container,#main .container2 {
-    background-color: #E2E2E2;
-    padding: 17px;
+#main .container, #main .container2 {
     display: flex;
     flex-wrap: wrap;
-    margin: 3px;
+    justify-content: center;
     border-radius: 10px;
+    background-color: #E2E2E2;
+    font-size: 0.8em;
+} 
+
+#main .container {
+    margin-right: 1%;
+}
+
+#main .container2 {
+    padding: 10px;
+    margin-left: 1%;
+    width: 100%;
 }
 
 .maincontent1,.maincontent2,.item3 {
-    background-color: white;
+    background-color: #FFF
 }
 
 /* Partie gauche uniquement*/
 #main .container {
-    width: 64%;
-    justify-content: center;
-    margin-right: 3%;
+    width: 70%;
 }
 
 #main .container h2, #main .container h3:last-child {
     width: 100%;
-    padding-left: 32px;
+    padding-left: 5%;
+}
+
+h2 {
+    padding-top: 2%;
 }
 
 .container h3:last-child:hover {
@@ -254,12 +252,9 @@ body {
 
 .maincontent1 {
     padding: 5px;
-    margin: 7px;
+    margin: 2%;
     flex-basis: 28%;
-    text-align: left;
     border-radius: 10px;
-    max-height: 210px;
-    max-width: 100%;
 }
 
 .maincontent1 p,.maincontent1 h2,.maincontent1 h3 {
@@ -281,27 +276,27 @@ body {
     color: #E2E2E2;
 }
 
- /* Partie droite uniquement*/
+/* Partie droite uniquement*/
 #main .container2 {
-    justify-content: center;
     align-content: center;
     width: 26%;
 }
 
 #main .container2 h2 {
-    width: 90%;
+    width: 80%;
+    padding-left: 3%;
 }
 
 #main .container2 .fa-chart-line {
-    width: 5%;
-    padding-top: 25px;
+    padding-top: 3%;
 }
 
 .maincontent2 {
     padding: 5px;
-    margin: 7px;
+    margin: 2%;
     display: flex;
     border-radius: 10px;
+    width: 100%;
 }
 
 .maincontent2 h2,.maincontent2 h3 {
@@ -314,27 +309,19 @@ body {
 }
 
 .maincontent2 img {
-    width: 140px;
+    width: 130px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
 
-.maincontent2 h3,.maincontent2 p {
-    max-width: 100%;
-}
-
 .maincontent2 div {
-    padding-left: 10px;
+    padding-left: 3%;
 }
 
 /* ----> Seconde section <---- */
-#second {
-    display: flex;
-}
-
 #second h2 {
-    padding-left: 20px;
+    padding-left: 3%;
 }
 
 #second .container-grille {
@@ -343,8 +330,6 @@ body {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto auto auto auto;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 #activites {
@@ -367,7 +352,7 @@ body {
 
 #second .container-grille .imglarge2 {
     width: 100%;
-    height: 206px;
+    height: 203px;
     object-fit: cover;
     border-radius: 10px 10px 0 0 ;
 }
@@ -378,7 +363,7 @@ body {
 }
 
 #second .content1 p, #second .content2 p {
-    padding-left: 5px;
+    padding-left: 3%;
 }
 
 #second .content1 a, #second .content2 a {
@@ -388,7 +373,6 @@ body {
 #second .content1 {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
     border-radius: 10px;
-    height: 100%;
 }
 
 #second .content2 .subcontent {
@@ -400,42 +384,37 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
 }
 
 #second .subcontent {
-    width: 93%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 94%;
 }
 
 #second .imgl1 {
-    margin-bottom: 5px;
+    margin-bottom: 2%;
 }
 
 #second .imgl2 {
-    margin-top: 5px;
+    margin-top: 1%;
 }
 
 /* ----> Footer <---- */
 #footer {
     display: flex;
-    margin: 10px;
+    margin: 5% 0 0 0;
     background-color: #F2F2F2;
-    margin: 50px 0 0 0;
 }
 
 #footer p, #footer h2 {
-    margin: 5px;
+    margin: 1%;
 }
 
 #footer .container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
-    margin: 3px;
-    padding: 17px;
+    justify-content: space-between;
+    padding: 2%;
 }
 
 #footer .content {
@@ -443,18 +422,17 @@ body {
 }
 
 #footer .content h2,#footer .content p {
-    padding-bottom: 10px;
+    padding-bottom: 2%;
 }
 
-/* ----> Media Querry (1200px / 801px) <---- */
+/* ----> Media Querry (1200px / 821px) <---- */
 @media screen and (max-width: 1200px){
 /* ----> Premiere section <---- */
-/* Partie gauche */
+/* Partie haute */
     #main .container {
         width: 100%;
         flex-basis: 100%;
-        margin-bottom: 3px;
-        margin-top: 20px;
+        margin-bottom: 2%;
         margin-right: 0;
     }
 
@@ -462,73 +440,75 @@ body {
         width: 100%;
     }
 
-/* Partie droite */
+/* Partie basse */
     #main .container2 {
         width: 100%;
         flex-basis: 100%;
-        margin-right: 0;
+        margin-left: 0;
+
+    }
+
+    #main .container2 h2 {
+        width: 92%;
+    }
+    
+    #main .container2 .fa-chart-line {
+        padding-top: 3%;
+        padding-right: 3%;
     }
 
     .maincontent2 {
         max-width: 100%;
         max-height: 100%;
         flex-basis: 28%;
-        text-align: left;
         display: block;
     }
 
     .maincontent2 img {
         width: 100%;
-        height: 150px;
+        height: 120px;
+        object-fit: cover;
         border-radius: 10px 10px 0 0;
     }
-/* ----> Seconde section <---- */
-    #second .content1, #second .content2 {
-        height: 98%;
+
+    .maincontent2 div {
+        padding-left: 0;
+    }
+
+    .maincontent2 p,.maincontent2 h3 {
+        margin: 6px 0;
     }
 }
 
-/* ----> Media Querry (800px / 600px) <---- */
-@media only screen and (max-width: 799px) and (min-width: 600px){
+/* ----> Media Querry (820px / 600px) <---- */
+@media only screen and (max-width: 820px) and (min-width: 600px){
 /* ----> Première section <---- */
 /* Partie haute */
     .maincontent1 {
-        width: 100%;
         flex-basis: 40%;
     }
 
 /* Partie basse */
+    #main .container2 h2 {
+        width: 80%;
+    }
+
     .maincontent2 {
-        padding: 5px;
-        margin: 7px 40px 7px;
+        margin: 3%;
         display: flex;
         border-radius: 20px;
         flex-basis: 100%;
     }
 
     .maincontent2 img {
-        width: 150px;
-        height: 160px;
+        width: 300px;
+        height: 180px;
         object-fit: cover;
         border-radius: 20px 0 0 20px;
     }
 
 /* ----> Seconde section <---- */
-    #second .container {
-        padding: 20px;
-    }
-
-    #second .container .imgxlarge,#second .container .imglarge {
-        width: 100%;
-    }
-
-    #second .container .content1,#second .container .content2 {
-        width: 45%;
-    }
-
     #second .container-grille {
-        min-height: 100%;
-        width: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto;
@@ -541,68 +521,52 @@ body {
     }
 
     #second .container-grille .imgxlarge {
-        width: 100%;
         height: 500px;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0 ;
-    }
-
-    #second .container-grille .imglarge1 {
-        width: 100%;
-        height: 230px;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0 ;
     }
 
     #second .container-grille .imglarge2 {
-        width: 100%;
         height: 180px;
         object-fit: cover;
         border-radius: 10px 10px 0 0 ;
+    }
+    #second .content1, #second .content2 {
+        height: 98%;
     }
 }
 /* ----> Media Querry (599px et moins) <---- */
 @media only screen and (max-width: 599px) {
 /* ----> Logo + Nav <---- */
     #navbar {
-        display: flex;
-        margin: 10px;
-        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
     }
 
     #navbar .contentnav {
-        margin: 3px;
-        padding: 17px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+        margin-bottom: 10%;
+        padding: 0;
     }
 
     .parent {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        display: flex;
+        margin: 0;
     }
 
     .child1 {
-        position: absolute;
         top: 100px;
         left: 0;
-        font-size: 1.4em;
+        font-size: 1em;
         width: 50%;
         text-align: center;
-        margin: 0;
+        padding-bottom: 3%;
     }
 
     .child2 {
         position: absolute;
         top: 100px;
         right: 0;
-        font-size: 1.4em;
+        font-size: 1em;
         width: 50%;
         text-align: center;
-        margin: 0;
+        padding-bottom: 3%;
     }
 
     #navbar .child1,#navbar .child2 {
@@ -617,8 +581,9 @@ body {
 
     .monlogo {
         width: 140px;
-        height: 60px;
-        padding: 10px;
+        height: 65px;
+        padding-left: 3%;
+        justify-content: start;
     }
 
     #navbar a {
@@ -639,28 +604,47 @@ body {
         font-size: 1.7em;
         text-align: center;
         display:block;
-        width:200px;
-        padding-top: 25px;
+        width:40%;
+        text-align: end;
+        padding-right: 3%;
     }
 
 /* ----> Header <---- */
     #header h2 {
-        padding-top: 30px;
+        padding-top: 10%;
     }
 
     .filtre {
-        margin-bottom: 70px;
+        margin: 5% 0 3%;
     }
 
     .filtre0 {
         width: 100%;
+        padding-bottom: 3%;
     }
 
+    .filtre1 {
+        margin: 1%;
+    }
+
+    .searchbar {
+        width: 100%;
+    }
+
+    .fa-map-marker-alt {
+        width: 5%;
+    }
+
+    .search0 {
+        width: 100%;
+    }
+    
     .button-1 {
         display: flex;
-        width: 50px; 
+        width: 15%; 
         border-radius: 0 12px 12px 0; 
-        padding: 0;
+        padding: 0 5% 0 0;
+        justify-content: center;
         align-items: center;
     }
 
@@ -684,41 +668,28 @@ body {
  
 /* ----> Premiere section <---- */
     #main {
-        display: flex;
         flex-direction: column-reverse;
         margin: 0;
     }
 
 /* Partie haute */
     #main .container2 {
-        width: 100%;
         border-radius: 0;
-        margin: 0;
-        padding: 20px 0;
-
     }
 
     .maincontent2 {
-        padding: 5px;
-        margin: 7px 40px 7px;
         display: flex;
         border-radius: 20px;
         flex-basis: 100%;
     }
 
     #main .container2 h2 {
-        width: 70%;
-        padding-left: 25px;
-    }
-
-    .fa-chart-line {
-        padding-top: 25px;
-        padding-right: 40px;
+        width: 80%;
     }
 
     .maincontent2 img {
-        width: 150px;
-        height: 160px;
+        width: 120px;
+        height: 140px;
         object-fit: cover;
         border-radius: 20px 0 0 20px;
     }

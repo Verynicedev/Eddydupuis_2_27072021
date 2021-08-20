@@ -241,12 +241,15 @@ body {
     width: 64%;
     justify-content: center;
     margin-right: 3%;
-
 }
 
 #main .container h2, #main .container h3:last-child {
     width: 100%;
     padding-left: 32px;
+}
+
+.container h3:last-child:hover {
+    color: #0065FC;
 }
 
 .maincontent1 {
@@ -291,6 +294,7 @@ body {
 
 #main .container2 .fa-chart-line {
     width: 5%;
+    padding-top: 25px;
 }
 
 .maincontent2 {

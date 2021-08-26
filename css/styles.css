@@ -229,18 +229,18 @@ body {
 
 /* Partie gauche uniquement*/
 #main .container {
-    /* width: 70%; */
     margin-right: 1%;
     flex: 3;
 }
 
 #main .container h2, #main .container h3:last-child {
     width: 100%;
-    padding-left: 5%;
+    padding-left: 3%;
 }
 
 h2 {
     padding-top: 2%;
+    margin: 0;
 }
 
 .container h3:last-child:hover {
@@ -265,6 +265,10 @@ h2 {
     border-radius: 15px 15px 0 0;
 }
 
+.maincontent1 .divheb {
+    padding-left: 3%;
+}
+
 .star0 {
     color: #0065FC;
 }
@@ -275,29 +279,30 @@ h2 {
 
 /* Partie droite uniquement*/
 #main .container2 {
-    /* align-content: center; */
-    /* width: 26%; */
-    padding: 10px;
-    margin-left: 1%;
-    width: 100%;
     flex: 1;
 }
 
 #main .container2 h2 {
     width: 80%;
-    padding-left: 3%;
+    padding: 5% 0% 6% 5%;
+    margin: 0;
+    text-align: start;
+
 }
 
 #main .container2 .fa-chart-line {
-    padding-top: 3%;
+    padding-top: 5%;
+    width: 10%;
 }
 
 .maincontent2 {
-    padding: 5px;
-    margin: 2%;
     display: flex;
     border-radius: 20px;
-    width: 100%;
+    width: 90%;
+    padding: 5px;
+    margin: 2%;
+    text-decoration: none;
+    color: inherit;
 }
 
 .maincontent2 h2,.maincontent2 h3 {
@@ -309,20 +314,34 @@ h2 {
     margin-bottom: 50px;
 }
 
-.maincontent2 img {
-    width: 130px;
+.imgpop1,.imgpop2,.imgpop3 {
+    width: 40%;
     height: 150px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
     border-radius: 15px 0 0 15px;
 }
 
-.maincontent2 div {
+.imgpop1 {
+    background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+.imgpop2 {
+    background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+
+.imgpop3 {
+    background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+.maincontent2 .divpop {
     padding-left: 3%;
+    width: 50%;
 }
 
 /* ----> Seconde section <---- */
 #second h2 {
-    padding-left: 3%;
+    padding: 1% 0 1% 3%;
 }
 
 #second .container-grille {
@@ -459,12 +478,13 @@ h2 {
     }
 
     #main .container2 h2 {
-        width: 92%;
+        width: 80%;
+        margin: 2% 0 0 0;
+        padding: 0;
     }
     
     #main .container2 .fa-chart-line {
-        padding-top: 3%;
-        padding-right: 3%;
+        padding: 3% 0 0 3%;
     }
 
     .maincontent2 {
@@ -474,11 +494,29 @@ h2 {
         display: block;
     }
 
-    .maincontent2 img {
+    .imgpop1,.imgpop2,.imgpop3 {
         width: 100%;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0px;
+    }
+
+    .imgpop1 {
+        background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+
+    .imgpop2 {
+        background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    }
+
+    .imgpop3 {
+        background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    }
+
+    .maincontent2 .divpop {
+        padding-left: 3%;
+        width: 100%;
     }
 
     .maincontent2 p,.maincontent2 h3 {
@@ -506,11 +544,8 @@ h2 {
         flex-basis: 100%;
     }
 
-    .maincontent2 img {
-        width: 300px;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 20px 0 0 20px;
+    .imgpop1,.imgpop2,.imgpop3 {
+        border-radius: 15px 0 0 15px;
     }
 
 /* ----> Seconde section <---- */
@@ -694,11 +729,14 @@ h2 {
         width: 80%;
     }
 
-    .maincontent2 img {
-        width: 120px;
-        height: 140px;
-        object-fit: cover;
-        border-radius: 20px 0 0 20px;
+    .imgpop1,.imgpop2,.imgpop3 {
+        border-radius: 15px 0 0 15px;
+        width: 50%;
+    }
+
+    .maincontent2 .divpop {
+        padding-left: 3%;
+        width: 50%;
     }
 
 /* Partie basse */

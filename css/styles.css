@@ -1,18 +1,21 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-}
-
-#container {
     max-width: 1440px;
     margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
 }
+
+/* #container {
+    max-width: 1440px;
+    margin: 0 auto;
+} */
 
 /* ----> Les conteneurs de la page <---- */
 #navbar, #header, #main{
     display: flex;
+    /* margin: 10px; */
+}
+
+#header, #main{
     margin: 10px;
 }
 
@@ -53,6 +56,8 @@ body {
     height: 65px;
     justify-content: start;
     padding-top: 10px;
+    padding-left: 1%;
+
 }
 
 #navbar a {
@@ -425,6 +430,15 @@ h2 {
     padding-bottom: 2%;
 }
 
+#footer .content a {
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+#footer .content a:hover {
+    color: #0065FC;
+}
+
 /* ----> Media Querry (1200px / 821px) <---- */
 @media screen and (max-width: 1200px){
 /* ----> Premiere section <---- */
@@ -469,10 +483,6 @@ h2 {
         height: 120px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
-    }
-
-    .maincontent2 div {
-        padding-left: 0;
     }
 
     .maincontent2 p,.maincontent2 h3 {
@@ -675,12 +685,13 @@ h2 {
 /* Partie haute */
     #main .container2 {
         border-radius: 0;
+        padding: 0;
     }
 
     .maincontent2 {
         display: flex;
         border-radius: 20px;
-        flex-basis: 100%;
+        flex-basis: 80%;
     }
 
     #main .container2 h2 {
@@ -696,13 +707,12 @@ h2 {
 
 /* Partie basse */
     #main .container {
-        width: 100%;
         border-radius: 0;
         margin: 7px 0;
-        padding: 0;
+        /* padding: 0; */
         background-color: white;
-
     }
+    
     .maincontent1 {
         padding: 5px;
         margin: 7px 40px 7px;
@@ -730,12 +740,9 @@ h2 {
     }
 
     #second .container-grille {
-        height: 100%;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
     }
 
     #activites {
@@ -782,5 +789,23 @@ h2 {
 /* ----> Footer <---- */
     #footer .content{
         flex-basis: 100%;
+    }
+}
+/* ----> Media Querry (400px et moins) <---- */
+@media only screen and (max-width: 400px) {
+/* ----> Header <---- */
+    .headertitle {
+        padding-top: 5%;
+    }
+
+/* ----> Premiere section <---- */
+/* Partie haute */
+    .maincontent2 {
+        flex-basis: 90%;
+    }
+
+/* Partie basse */
+    .maincontent1 {
+        margin: 7px;
     }
 }

@@ -203,7 +203,7 @@ body {
 }
 
 /* ----> Premiere section <---- */
-/* ----> Partie gauche et droite <---- */
+/* ----> Parties Hebergement et Populaire<---- */
 #main {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -227,7 +227,7 @@ body {
     transform: scale(1.04);
 }
 
-/* Partie gauche uniquement*/
+/* Partie gauche hebergement*/
 #main .container {
     margin-right: 1%;
     flex: 3;
@@ -277,7 +277,7 @@ h2 {
     color: #E2E2E2;
 }
 
-/* Partie droite uniquement*/
+/* Partie populaire*/
 #main .container2 {
     flex: 1;
 }
@@ -340,6 +340,7 @@ h2 {
 }
 
 /* ----> Seconde section <---- */
+/* Partie activites */
 #second h2 {
     padding: 1% 0 1% 3%;
 }
@@ -457,7 +458,7 @@ h2 {
 /* ----> Media Querry (1200px / 821px) <---- */
 @media screen and (max-width: 1200px){
 /* ----> Premiere section <---- */
-/* Partie haute */
+/* Partie hebergement */
     #main .container {
         width: 100%;
         flex-basis: 100%;
@@ -469,7 +470,7 @@ h2 {
         width: 100%;
     }
 
-/* Partie basse */
+/* Partie populaire */
     #main .container2 {
         width: 100%;
     }
@@ -509,12 +510,12 @@ h2 {
 /* ----> Media Querry (820px / 600px) <---- */
 @media only screen and (max-width: 820px) and (min-width: 600px){
 /* ----> Première section <---- */
-/* Partie haute */
+/* Partie hebergement */
     .maincontent1 {
         flex-basis: 40%;
     }
 
-/* Partie basse */
+/* Partie populaire */
     #main .container2 h2 {
         width: 80%;
     }
@@ -541,6 +542,7 @@ h2 {
     }
 
 /* ----> Seconde section <---- */
+/* Partie activites */
     #second .container-grille {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -705,7 +707,7 @@ h2 {
         margin: 0;
     }
 
-/* Partie haute */
+/* Partie populaire */
     #main .container2 {
         border-radius: 0;
         padding: 0;
@@ -732,7 +734,7 @@ h2 {
         width: 50%;
     }
 
-/* Partie basse */
+/* Partie hebergement */
     #main .container {
         border-radius: 0;
         margin: 7px 0;
@@ -762,6 +764,7 @@ h2 {
     }
 
 /* ----> Seconde section <---- */
+/* Partie activites */
     #second {
         width: 100%;
     }
@@ -830,12 +833,12 @@ h2 {
     }
 
 /* ----> Premiere section <---- */
-/* Partie haute */
+/* Partie populaire */
     .maincontent2 {
         flex-basis: 90%;
     }
 
-/* Partie basse */
+/* Partie hebergement */
     .maincontent1 {
         margin: 7px;
     }

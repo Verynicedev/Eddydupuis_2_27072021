@@ -638,7 +638,7 @@ h2 {
     }
 
     .searchbar {
-        width: 100%;
+        width: 90%;
     }
 
     .fa-map-marker-alt {
@@ -796,6 +796,10 @@ h2 {
 /* ----> Header <---- */
     .headertitle {
         padding-top: 5%;
+    }
+
+    .searchbar {
+        width: 100%;
     }
 
 /* ----> Premiere section <---- */

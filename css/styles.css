@@ -393,13 +393,13 @@ h2 {
 }
 
 #second .content1 {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
     border-radius: 20px;
 }
 
 #second .content2 .subcontent {
     border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
 }
 
 #second .content2 {
@@ -749,7 +749,7 @@ h2 {
         width: 100%;
         flex-basis: 100%;
         border-radius: 20px;
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.200);
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
     }
 
     .maincontent1 img {

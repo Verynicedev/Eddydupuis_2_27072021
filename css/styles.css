@@ -253,6 +253,7 @@ h2 {
     margin: 2%;
     flex-basis: 28%;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
 }
 
 .maincontent1 p,.maincontent1 h2,.maincontent1 h3 {
@@ -304,6 +305,8 @@ h2 {
     margin: 2%;
     text-decoration: none;
     color: inherit;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
+    
 }
 
 .maincontent2 h2,.maincontent2 h3 {
@@ -511,12 +514,19 @@ h2 {
 /* ----> Media Querry (820px / 600px) <---- */
 @media only screen and (max-width: 820px) and (min-width: 600px){
 /* ----> Première section <---- */
+    #main {
+        flex-direction: column-reverse;
+    }
 /* Partie hebergement */
     .maincontent1 {
         flex-basis: 40%;
     }
 
 /* Partie populaire */
+    .container2 {
+        margin-bottom: 3%;
+    }
+    
     #main .container2 h2 {
         width: 80%;
     }

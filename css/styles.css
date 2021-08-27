@@ -224,7 +224,8 @@ body {
 
 .maincontent1:hover,.maincontent2:hover,.content1:hover,.subcontent:hover {
     cursor: pointer;
-    transform: scale(1.04);
+    transform: scale(1.03);
+    transition-duration: 0.5s;
 }
 
 /* Partie gauche hebergement*/
